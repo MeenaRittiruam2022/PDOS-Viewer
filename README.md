@@ -17,12 +17,12 @@ The page includes the same usage and format instructions. Reloading clears loade
 
 ## File naming
 
-Use `PDOS-ATOM-SYSTEM-SPIN.EXT`, for example:
+Use `Name.EXT`, for example:
 
-- `PDOS-Nb-NbHCl-up.txt`
-- `PDOS-Nb-NbHCl-dw.txt`
-- `PDOS-H-NbHCl-up.csv`
-- `PDOS-H-NbHCl-dw.csv`
+- `PDOS-Example-Demo-up.txt`
+- `PDOS-Example-Demo-dw.txt`
+- `PDOS-Example-Demo-up.csv`
+- `PDOS-Example-Demo-dw.csv`
 
 `SPIN` must be `up` or `dw`. `ATOM` must not contain a hyphen; `SYSTEM` may contain hyphens. Use identical capitalization for paired atom/system names. Loading another file for an existing atom/system/spin replaces that channel, including when switching from TXT to CSV.
 
