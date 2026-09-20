@@ -4,7 +4,7 @@ A standalone, English-language viewer for orbital-resolved projected density of 
 
 ## Quick start
 
-1. Open `https://meenarittiruam2022.github.io/PDOS-Viewer/` and click **Load PDOS files**.
+1. Open <a herf ="https://meenarittiruam2022.github.io/PDOS-Viewer/"> `https://meenarittiruam2022.github.io/PDOS-Viewer/` </a> and click **Load PDOS files**.
 2. Select multiple `.txt` or `.csv` files. Up/down files are paired from their names.
 3. Select datasets and orbitals for the active panel. **All 5 d orbitals** shows individual curves; **Sum d** shows their sum and calculates its band center.
 4. Use **Add** to copy the current panel, then edit its title, datasets, orbitals and Y limit. Set **Columns** to arrange panels.
