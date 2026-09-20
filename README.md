@@ -75,39 +75,3 @@ Positive PDOS magnitudes are used for both spins. Integration is exact for a pie
 The combined up/down center uses the sum of both first moments divided by the sum of both integrated PDOS areas. It is not the arithmetic average of the two centers. Both channels must be available and selected for a combined value. The spin filter affects all plots and the active-panel table. The plotted Y limit does not affect integration.
 
 For a d-band center, choose **Sum d**. Individual d-orbital centers are reported independently; they are not added to Sum d again. Use a consistent energy window and reference when comparing systems.
-
-## Publish on GitHub Pages (free public repository)
-
-1. Sign in at https://github.com and create a **new public repository** named, for example, `pdos-viewer`.
-2. Extract the release ZIP. In the repository, choose **Add file → Upload files**. Upload `index.html` and `README.md` at the repository root. The examples folder is optional. Commit the upload to `main`.
-3. Do not upload only the ZIP. Do not place `index.html` inside an extra release folder. The root must contain `index.html` with exactly that lowercase filename.
-4. Open **Settings → Pages**.
-5. Under **Build and deployment → Source**, select **Deploy from a branch**.
-6. Select branch **main**, folder **/(root)**, and click **Save**.
-7. Check the **Actions** tab for the Pages deployment. Return to Settings → Pages and use the published site link. For a project repository named `pdos-viewer`, the usual URL is `https://YOUR-USERNAME.github.io/pdos-viewer/`.
-8. Publishing may take up to 10 minutes. After deployment, open the site and test loading files, panel selection and exports.
-
-No build command or Streamlit wrapper is needed. GitHub Pages is available with GitHub Free for public repositories. A custom domain is optional.
-
-### Update the website
-
-Replace `index.html` in the same repository and branch, then commit. Wait for the Pages deployment to finish. If an old version remains visible, hard-refresh the browser (Cmd+Shift+R on Mac / Ctrl+Shift+R on Windows).
-
-### Troubleshooting
-
-- **404:** confirm root-level `index.html`, branch `main`, folder `/(root)`, completed deployment and the correct repository name in the URL.
-- **Old content:** check the Actions run and refresh the browser cache.
-- **No data plotted:** check the filename, delimiter, selected datasets/orbitals and energy limits.
-- **Incomplete range:** select a window covered by both spin files.
-- **PNG too large:** lower DPI/width or use SVG. Browser memory limits apply to large multi-panel figures.
-
-### Data handling
-
-The viewer reads selected PDOS files locally in the browser. It has no upload endpoint or analytics code. Files selected through the viewer are not sent to GitHub by this code. Files committed to the public repository, including examples, are public. GitHub serves the website and may keep ordinary hosting request logs. Publish only data you intend to share.
-
-### Official GitHub documentation
-
-- https://docs.github.com/en/pages/quickstart
-- https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site
-
-Deployment instructions checked on 20 September 2026. This package is prepared for publishing; it has not been deployed to your GitHub account.
